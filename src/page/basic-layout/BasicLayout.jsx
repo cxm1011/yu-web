@@ -53,7 +53,7 @@ export default class BasicLayout extends React.Component {
   render() {
     const {defaultSelectedKeys} = this.state;
     return (
-      <Layout className='layout'>
+      <Layout className='layout' style={{minHeight: '100%'}}>
         <Header>
           <div className='logo' />
           <Menu
@@ -64,8 +64,9 @@ export default class BasicLayout extends React.Component {
             style={{ lineHeight: '64px' }}
           >
             <Menu.Item key='home'>首页</Menu.Item>
-            <Menu.Item key='branding-display'>走进品牌</Menu.Item>
+            <Menu.Item key='enter-brand'>走进品牌</Menu.Item>
             <Menu.Item key='food-display'>美食展示</Menu.Item>
+            <Menu.Item key='join-us'>加入我们</Menu.Item>
           </Menu>
         </Header>
         <Content style={{ padding: '0 2px', height: 'auto' }}>
