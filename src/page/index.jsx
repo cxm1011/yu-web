@@ -1,6 +1,7 @@
-import PersonalCenter from './personal-center';
+import BrandingDispaly from './branding-dispaly';
+import FoodDisplay from './food-display'
 import Home from './home';
 import BasicLayout from './basic-layout';
 
-export {PersonalCenter, Home, BasicLayout};
+export {BrandingDispaly, FoodDisplay, Home, BasicLayout};
 

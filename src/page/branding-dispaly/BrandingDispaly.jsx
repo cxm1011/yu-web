@@ -1,6 +1,6 @@
 import React from 'react';
 import {urls, services} from 'api';
-export default class PersonalCenter extends React.Component {
+export default class BrandingDIspaly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +18,7 @@ export default class PersonalCenter extends React.Component {
   render() {
     return (
       <div>
-        <span>个人中心</span>
+        <span>走进品牌</span>
       </div>
     )
   }

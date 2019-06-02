@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import {BasicLayout, PersonalCenter, Home} from 'page';
+import {BasicLayout, BrandingDispaly, FoodDisplay, Home} from 'page';
 
 const App = () => (
   <Router>
@@ -8,7 +8,8 @@ const App = () => (
       <BasicLayout>
         <Route exact path='/' component={Home} />
         <Route exact path='/home' component={Home} />
-        <Route exact path='/personal-center' component={PersonalCenter} />
+        <Route exact path='/branding-display' component={BrandingDispaly} />
+        <Route exact path='/food-display' component={FoodDisplay} />
       </BasicLayout>
     </Switch>
   </Router>)

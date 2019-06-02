@@ -64,10 +64,11 @@ export default class BasicLayout extends React.Component {
             style={{ lineHeight: '64px' }}
           >
             <Menu.Item key='home'>首页</Menu.Item>
-            <Menu.Item key='personal-center'>个人中心</Menu.Item>
+            <Menu.Item key='branding-display'>走进品牌</Menu.Item>
+            <Menu.Item key='food-display'>美食展示</Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ padding: '0 50px' }}>
+        <Content style={{ padding: '0 2px', height: 'auto' }}>
           <Switch>
             {this.props.children}
           </Switch>
