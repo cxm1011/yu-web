@@ -1,3 +1,3 @@
-import BrandingDIspaly from './BrandingDIspaly';
+import BrandingDispaly from './BrandingDispaly';
 
-export default BrandingDIspaly;
+export default BrandingDispaly;
