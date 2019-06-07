@@ -45,6 +45,8 @@ export default class Home extends React.Component {
     };
      // 点击按钮切换轮播图片的方法
      this.clickSwiperHandle = this.clickSwiperHandle.bind(this);
+    //  // 跳转加入我们
+    //  this.linkToJoinUs = this.linkToJoinUs.bind(this);
   }
 
   // 在此处开启定时器开始自动轮播
@@ -114,7 +116,11 @@ clickSwiperHandle(count) {
     console.log('getPersonInfo', data);
   }
 
-
+  // 跳转到加入我们
+   linkToJoinUs = () => {
+     console.log('joinUs')
+    location.hash = '/join-us';
+   }
   // 在此处去除定时器
   componentWillUnmount() {
       clearInterval(this.timerId);
@@ -301,12 +307,11 @@ clickSwiperHandle(count) {
               <li style={{height: '32px', paddingLeft: '50px'}}>XX</li>
             </div>
             <div className='button'>
-              <Button type='primary' size='large'>
-              加入我们
+              <Button type='primary' size='large' onClick={this.linkToJoinUs}>
+                  加入我们
                 <Icon type='mail' />
               </Button>
             </div>
-
           </div>
         </div>
       </div>

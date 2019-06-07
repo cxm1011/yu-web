@@ -52,23 +52,29 @@ export default class BasicLayout extends React.Component {
   }
   render() {
     const {defaultSelectedKeys} = this.state;
+    console.log('this.props.children', location.hash)
+    const keyIs = defaultSelectedKeys[0];
     return (
       <Layout className='layout' style={{minHeight: '100%'}}>
-        <Header>
-          <div className='logo' />
-          <Menu
-            theme='dark'
-            mode='horizontal'
-            onSelect={this.handleOnSelect}
-            defaultSelectedKeys={defaultSelectedKeys}
-            style={{ lineHeight: '64px' }}
-          >
-            <Menu.Item key='home'>首页</Menu.Item>
-            <Menu.Item key='enter-brand'>走进品牌</Menu.Item>
-            <Menu.Item key='food-display'>美食展示</Menu.Item>
-            <Menu.Item key='join-us'>加入我们</Menu.Item>
-          </Menu>
-        </Header>
+        { keyIs === 'message-board' ? null
+          : <Header>
+            <div className='logo' />
+            <Menu
+              theme='dark'
+              mode='horizontal'
+              onSelect={this.handleOnSelect}
+              defaultSelectedKeys={defaultSelectedKeys}
+              selectedKeys={location.hash.substr(2, location.hash.length)}
+              style={{ lineHeight: '64px' }}
+            >
+              <Menu.Item key='home'>首页</Menu.Item>
+              <Menu.Item key='enter-brand'>走进品牌</Menu.Item>
+              <Menu.Item key='food-display'>美食展示</Menu.Item>
+              <Menu.Item key='news-display'>资讯中心</Menu.Item>
+              <Menu.Item key='join-us'>加入我们</Menu.Item>
+            </Menu>
+          </Header>
+        }
         <Content style={{ padding: '0 2px', height: 'auto' }}>
           <Switch>
             {this.props.children}

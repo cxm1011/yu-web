@@ -12,6 +12,8 @@ export default class JoinUs extends React.Component {
   componentDidMount() {
     // mock只能为get请求
     services.get(urls.personalInfo, {}, this.getPersonInfo);
+    this.forceUpdate();
+    console.log('12345')
   }
 
   getPersonInfo = (data) => {
