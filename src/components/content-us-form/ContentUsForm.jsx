@@ -5,6 +5,7 @@ import {
   Input,
   Button,
 } from 'antd';
+import Regexp from 'utils/RegExp';
 const { TextArea } = Input;
 
 const formItemLayout = {
@@ -56,6 +57,7 @@ class ContentUsForm extends React.Component {
 
   render() {
     const { getFieldDecorator } = this.props.form;
+    const { mobilePhone, email, name } = Regexp;
     return (
       <div style={{width: '50%'}}>
         <Form {...formItemLayout} onSubmit={this.handleSubmit}>
@@ -66,6 +68,10 @@ class ContentUsForm extends React.Component {
                   required: true,
                   message: '请输入您的姓名!',
                 },
+                {
+                  pattern: name.pattern,
+                  message: name.message
+                }
               ],
             })(<Input />)}
           </Form.Item>
@@ -76,6 +82,10 @@ class ContentUsForm extends React.Component {
                   required: true,
                   message: '请输入您的手机号!',
                 },
+                {
+                  pattern: mobilePhone.pattern,
+                  message: mobilePhone.message
+                }
               ],
             })(<Input />)}
           </Form.Item>
@@ -85,16 +95,18 @@ class ContentUsForm extends React.Component {
                 {
                   required: true,
                   message: '请输入您的邮箱!',
-                },
+                }, {
+                  pattern: email.pattern,
+                  message: email.message
+                }
               ],
             })(<Input />)}
           </Form.Item>
           <Form.Item label='内容'>
             {getFieldDecorator('content', {
-              rules: [
-                {
-                  required: true,
-                  message: '请输入内容',
+              rules: [{
+                  max: 100,
+                  message: '最长可输入100个字符!',
                 },
               ],
             })(<TextArea rows={4} />)}

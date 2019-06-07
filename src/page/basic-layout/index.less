@@ -12,11 +12,52 @@
   position: relative; 
   margin: 0;  
   padding: 0; 
+  .header {
+    height: 150px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
   .footer {
     bottom: 0px;
     background-color: black;
     color: white;
     width: 100%;
     text-align: center;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+  }
+  .menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 400px;
+    line-height: 55px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ant-menu {
+    font-size: 16px;
+  }
+
+  .ant-menu-item {
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .header-phone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
+    color: white;
+    font-size: 18px;
   }
 }
