@@ -1,5 +1,6 @@
 import React from 'react';
 import {urls, services} from 'api';
+import {Carousel} from 'antd';
 import './index.less';
 import {ContentDisplay} from 'components';
 
@@ -12,16 +13,19 @@ export default class EnterBrand extends React.Component {
         title: '品牌介绍',
         subTitle: '匠心独具|创意无限',
         contentList: [
-          '脉鹿餐饮是以引领餐饮时尚为发展理念的创新型餐饮管理公司，立志于打造中国的创新餐饮品牌，现已经拥有五谷粥稻创意粥、展护味拼饭、爱的便当等创新餐饮品牌。',
-          '五谷粥稻创意粥以最具创意的构思，独特的配方、打破传统粥类单一的口味，创新的工艺还原食材本真的健康风味；拥有完善的新品研发中心，中央厨房配送中心，为合作伙伴、全国加盟商提供全方位的无忧保障。',
-          '做一碗有创意的粥是我们的品牌理念，我们秉承“诚信、创新、共赢”的合作理念，以成熟的运营管理经验和完善的加盟扶持体系，无微不至的为合作伙伴提供开店支持和帮助。'
+          '创始人Mr.Zorro第一次品尝到芝士水果饼是在马拉西亚的一家五星级酒店。 ',
+          '现烤的芝士榴莲饼，进店必点菜品，以前对榴莲“臭味”极度敏感的他，尝一口后，竟然停不下来。国内有很多人跟创始人一样，因为榴莲独特的“臭味”进而对榴莲敬而远之，为改变大家对榴莲的偏见， Mr.Zorro创立的缘来我想对你说“品牌芝士榴莲饼诞生了”。',
+          '手工制作+现场烤制+空白市场。缘来我想对你说，就是这样一个品牌。店内产品覆盖年龄范围宽泛，爱众群众广，覆盖季节饱满。'
         ]
       }
     }
   }
+
+
   componentDidMount() {
     // mock只能为get请求
     services.get(urls.personalInfo, {}, this.getPersonInfo);
+    document.documentElement.scrollTop = document.body.scrollTop = 0;
   }
 
   getPersonInfo = (data) => {
@@ -31,10 +35,17 @@ export default class EnterBrand extends React.Component {
     const {brandIntroduce} = this.state;
     console.log('brandIntroduce', brandIntroduce);
     return (
-      <div>
-        <img src='src/assets/1.jpeg' className='headImage' />
+      <div style={{paddingTop: '100px'}}>
+        <Carousel autoplay>
+          <div>
+            <div className='title_img1' />
+          </div>
+          <div>
+            <div className='title_img2' />
+          </div>
+        </Carousel>,
         <div className='videoDiv' >
-          <video src='src/assets/1.mp4' autoPlay controls controlsList='nodownload' className='video' style={{height: '400px', width: '600px'}} />
+          <video src='http://120.27.68.176:8080/image/display.mp4' controls controlsList='nodownload' className='video' style={{height: '400px', width: '600px'}} />
         </div>
         <ContentDisplay content={brandIntroduce} />
       </div>

@@ -3,10 +3,11 @@
 
 .food_display{
     width: 100%;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     overflow-y:scroll;
-    .title_img{
+    .title_img1{
         width: 1440px;
         height: 450px;
         cursor: default;
@@ -19,8 +20,23 @@
         position: relative;
         z-index: 1;
         background-size: cover;
-        background-image: url(@url-prefix)
-
+        background-image: url('http://120.27.68.176:8080/image/title1.png')
+  
+    }
+    .title_img2{
+      width: 1440px;
+      height: 450px;
+      cursor: default;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      outline: none;
+      margin: 0px auto;
+      position: relative;
+      z-index: 1;
+      background-size: cover;
+      background-image: url('http://120.27.68.176:8080/image/title2.png')
     }
     .food_content{
         width: 100%;
@@ -41,23 +57,7 @@
             display: flex;
             flex-direction: row;
             padding-top: 45px;
-            .left_img{
-                width: 49%;
-                height: 333px;
-                cursor: default;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                overflow: hidden;
-                display: block;
-                outline: none;
-                padding: 10px;
-                position: relative;
-                z-index: 1;
-                background-size: cover;
-                background-image: url('//18906152.s21i.faiusr.com/2/ABUIABACGAAg27uR5QUo45n3hQMwsCc4oBo!500x500.jpg');
-                animation: shake 3s alternate forwards;
-            } 
-            
+            justify-content:center;
             @keyframes bounceInLeft {
                 from, 60%, 75%, 90%, to {animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
                 0% {opacity: 0;transform: translate3d(-3000px, 0, 0);}
@@ -103,7 +103,89 @@
                     transform: scale(1);
                 }
             }
-            .right_img{
+            .left_img1{
+                width: 30%;
+                height: 450px;
+                cursor: default;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                position: relative;
+                padding: 10px,auto;
+                z-index: 1;
+                background-size: cover;
+                background-image: url('http://120.27.68.176:8080/image/food1.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .right_img1{
+                width: 30%;
+                height:333px;
+                cursor: default;
+                margin-left: 50px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: 100% 100%;
+                background-image: url('http://120.27.68.176:8080/image/food1.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .left_img2{
+                width: 30%;
+                height: 450px;
+                cursor: default;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: cover;
+                background-image: url('http://120.27.68.176:8080/image/food2.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .right_img2{
+                width: 30%;
+                height:333px;
+                cursor: default;
+                margin-left: 50px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: 100% 100%;
+                background-image: url('http://120.27.68.176:8080/image/food2.jpg');
+                animation: shake 3s alternate forwards;
+            }  
+            .left_img3{
+                width: 30%;
+                height: 450px;
+                cursor: default;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: cover;
+                background-image: url('http://120.27.68.176:8080/image/food3.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .right_img3{
                 width: 49%;
                 height:333px;
                 cursor: default;
@@ -116,10 +198,109 @@
                 padding: 10px;
                 position: relative;
                 z-index: 1;
-                background-size: cover;
-                background-image: url('//18906152.s21i.faiusr.com/2/ABUIABACGAAg27uR5QUo45n3hQMwsCc4oBo!500x500.jpg');
+                background-size: 100% 100%;
+                background-image: url('http://120.27.68.176:8080/image/food3.jpg');
                 animation: shake 3s alternate forwards;
-            }  
+            } 
+            .left_img4{
+                width: 30%;
+                height: 450px;
+                cursor: default;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: cover;
+                background-image: url('http://120.27.68.176:8080/image/food4.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .right_img4{
+                width: 49%;
+                height:333px;
+                cursor: default;
+                margin-left: 50px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: 100% 100%;
+                background-image: url('http://120.27.68.176:8080/image/food4.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .left_img5{
+                width: 30%;
+                height: 450px;
+                cursor: default;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: cover;
+                background-image: url('http://120.27.68.176:8080/image/food5.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .right_img5{
+                width: 49%;
+                height:333px;
+                cursor: default;
+                margin-left: 50px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: 100% 100%;
+                background-image: url('http://120.27.68.176:8080/image/food5.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .left_img6{
+                width: 30%;
+                height: 450px;
+                cursor: default;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: cover;
+                background-image: url('http://120.27.68.176:8080/image/food6.jpg');
+                animation: shake 3s alternate forwards;
+            } 
+            .right_img6{
+                width: 49%;
+                height:333px;
+                cursor: default;
+                margin-left: 50px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                outline: none;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                background-size: 100% 100%;
+                background-image: url('http://120.27.68.176:8080/image/food6.jpg');
+                animation: shake 3s alternate forwards;
+            } 
         }
   
     }

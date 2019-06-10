@@ -57,16 +57,16 @@ export default class BasicLayout extends React.Component {
     return (
       <Layout className='layout' style={{minHeight: '100%'}}>
         {
-          keyIs === 'message-board' ? null
+          keyIs === 'message-board' || keyIs === 'login' ? null
           : <Header className='header'>
             <div className='logo'>
-              <img src='src/assets/logo.jpeg' width='130px' height='130px' />
+              <img src='http://120.27.68.176:8080/image/logo.jpg' width='80px' height='80px' />
             </div>
             <Menu
               theme='dark'
               mode='horizontal'
               onSelect={this.handleOnSelect}
-              defaultSelectedKeys={defaultSelectedKeys}
+              selectedKeys={location.hash.substr(2)}
               className='menu'
             >
               <Menu.Item key='home'>首页</Menu.Item>
@@ -76,7 +76,7 @@ export default class BasicLayout extends React.Component {
               <Menu.Item key='join-us'>加入我们</Menu.Item>
             </Menu>
             <div className='header-phone'>
-              <span>加盟热线: 021-8888 8888</span>
+              <span>加盟热线: 18801759886</span>
             </div>
           </Header>
         }
@@ -85,7 +85,10 @@ export default class BasicLayout extends React.Component {
             {this.props.children}
           </Switch>
         </Content>
-        <Footer className='footer' >张钰餐饮有限公司@2019</Footer>
+        {
+          keyIs === 'login' ? null
+          : <Footer className='footer' >南通帝豪云长商贸有限公司@2019</Footer>
+        }
       </Layout>
     )
   }
