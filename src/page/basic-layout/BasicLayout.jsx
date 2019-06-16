@@ -76,7 +76,7 @@ export default class BasicLayout extends React.Component {
               <Menu.Item key='join-us'>加入我们</Menu.Item>
             </Menu>
             <div className='header-phone'>
-              <span>加盟热线: 18801759886</span>
+              <span>加盟热线: 4000577786</span>
             </div>
           </Header>
         }
@@ -87,7 +87,7 @@ export default class BasicLayout extends React.Component {
         </Content>
         {
           keyIs === 'login' ? null
-          : <Footer className='footer' >南通帝豪云长商贸有限公司@2019</Footer>
+          : <Footer className='footer' >缘来我想对你说</Footer>
         }
       </Layout>
     )

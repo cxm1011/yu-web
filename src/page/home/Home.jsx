@@ -269,7 +269,7 @@ clickSwiperHandle(count) {
             </div>
             <div className='line_one'>
               <div className='nine_all_one'>
-                <div className='nine_img7'>
+                <div className='nine_img8'>
                   {}
                 </div>
                 <div className='nine_img_title'>7.营运服务</div>
@@ -278,7 +278,7 @@ clickSwiperHandle(count) {
                 地区，不同定位的创业者</div>
               </div>
               <div className='nine_all_one'>
-                <div className='nine_img8'>
+                <div className='nine_img7'>
                   {}
                 </div>
                 <div className='nine_img_title'>8.菜品支持</div>

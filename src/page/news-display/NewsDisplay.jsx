@@ -33,7 +33,7 @@ export default class NewsDisplay extends React.Component {
         href: 'https://baijiahao.baidu.com/s?id=1635327191047929915&wfr=spider&for=pc',
         title: `爆款网红榴莲饼`,
         index: 1,
-        avatar: 'https://18906152.s21i.faiusr.com/2/ABUIABACGAAg27uR5QUo45n3hQMwsCc4oBo!500x500.jpg',
+        avatar: 'http://120.27.68.176:8080/image/logo.jpg',
         description:
           '网红芝士榴莲饼，榴莲爱好者的福音，用气味和甜蜜俘虏你！',
         content:
@@ -43,7 +43,7 @@ export default class NewsDisplay extends React.Component {
         href: 'https://baijiahao.baidu.com/s?id=1620513949126444861&wfr=spider&for=pc',
         title: `芝士榴莲饼再度来袭！`,
         index: 4,
-        avatar: 'https://18906152.s21i.faiusr.com/2/ABUIABACGAAg27uR5QUo45n3hQMwsCc4oBo!500x500.jpg',
+        avatar: 'http://120.27.68.176:8080/image/logo.jpg',
         description:
           '网红小吃再度来袭，芝士榴莲饼一块35元，顾客：这次不是跟风了！',
         content:
@@ -53,7 +53,7 @@ export default class NewsDisplay extends React.Component {
         href: 'http://www.sohu.com/a/231768824_99988178',
         title: `榴莲市场潜力巨大`,
         index: 7,
-        avatar: 'https://18906152.s21i.faiusr.com/2/ABUIABACGAAg27uR5QUo45n3hQMwsCc4oBo!500x500.jpg',
+        avatar: 'http://120.27.68.176:8080/image/logo.jpg',
         description:
           '中国榴莲市场远未饱和，或将成为下一个"全民水果"！ ',
         content:
